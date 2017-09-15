@@ -1,0 +1,6 @@
+framework module Pods_expensesMine {
+  umbrella header "Pods-expensesMine-umbrella.h"
+
+  export *
+  module * { export * }
+}
