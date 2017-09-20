@@ -7,7 +7,7 @@ target 'expensesMine' do
 
   # Pods for expensesMine
   pod 'RealmSwift'
-  pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift', :tag => '4.0.0-beta.0'
-  pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift', :tag => '4.0.0-beta.0'
+  pod 'RxSwift', '~> 3.0'
+  pod 'RxCocoa', '~> 3.0'
 
 end

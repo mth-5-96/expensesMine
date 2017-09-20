@@ -13,33 +13,27 @@
     #endif
     import UIKit
     
-    open class RxTextStorageDelegateProxy
-        : DelegateProxy<NSTextStorage, NSTextStorageDelegate>
-        , DelegateProxyType 
+    public class RxTextStorageDelegateProxy
+        : DelegateProxy
+        , DelegateProxyType
         , NSTextStorageDelegate {
 
-        /// Typed parent object.
-        public weak private(set) var textStorage: NSTextStorage?
-
-        /// - parameter parentObject: Parent object for delegate proxy.
-        public init(parentObject: NSTextStorage) {
-            self.textStorage = parentObject
-            super.init(parentObject: parentObject, delegateProxy: RxTextStorageDelegateProxy.self)
-        }
-
-        // Register known implementations
-        public static func registerKnownImplementations() {
-            self.register { RxTextStorageDelegateProxy(parentObject: $0) }
-        }
-
         /// For more information take a look at `DelegateProxyType`.
-        open class func setCurrentDelegate(_ delegate: NSTextStorageDelegate?, to object: ParentObject) {
-            object.delegate = delegate
+        public override class func createProxyForObject(_ object: AnyObject) -> AnyObject {
+            let pickerView: NSTextStorage = castOrFatalError(object)
+            return pickerView.createRxDelegateProxy()
         }
         
         /// For more information take a look at `DelegateProxyType`.
-        open class func currentDelegate(for object: ParentObject) -> NSTextStorageDelegate? {
-            return object.delegate
+        public class func setCurrentDelegate(_ delegate: AnyObject?, toObject object: AnyObject) {
+            let textStorage: NSTextStorage = castOrFatalError(object)
+            textStorage.delegate = castOptionalOrFatalError(delegate)
+        }
+        
+        /// For more information take a look at `DelegateProxyType`.
+        public class func currentDelegateFor(_ object: AnyObject) -> AnyObject? {
+            let textStorage: NSTextStorage = castOrFatalError(object)
+            return textStorage.delegate
         }
     }
 #endif

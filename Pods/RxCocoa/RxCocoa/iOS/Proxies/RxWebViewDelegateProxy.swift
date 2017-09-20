@@ -13,34 +13,30 @@ import UIKit
 import RxSwift
 #endif
 
-open class RxWebViewDelegateProxy
-    : DelegateProxy<UIWebView, UIWebViewDelegate>
-    , DelegateProxyType 
+public class RxWebViewDelegateProxy
+    : DelegateProxy
+    , DelegateProxyType
     , UIWebViewDelegate {
 
-    /// Typed parent object.
-    public weak private(set) var webView: UIWebView?
-
-    /// - parameter parentObject: Parent object for delegate proxy.
-    public init(parentObject: ParentObject) {
-        self.webView = parentObject
-        super.init(parentObject: parentObject, delegateProxy: RxWebViewDelegateProxy.self)
+    /// For more information take a look at `DelegateProxyType`.
+    public override class func createProxyForObject(_ object: AnyObject) -> AnyObject {
+        let pickerView: UIWebView = castOrFatalError(object)
+        return pickerView.createRxDelegateProxy()
     }
-
-    // Register known implementations
-    public static func registerKnownImplementations() {
-        self.register { RxWebViewDelegateProxy(parentObject: $0) }
+    
+    /// For more information take a look at `DelegateProxyType`.
+    public class func setCurrentDelegate(_ delegate: AnyObject?, toObject object: AnyObject) {
+        let webView: UIWebView = castOrFatalError(object)
+        webView.delegate = castOptionalOrFatalError(delegate)
     }
 
     /// For more information take a look at `DelegateProxyType`.
-    open class func setCurrentDelegate(_ delegate: UIWebViewDelegate?, to object: UIWebView) {
-        object.delegate = delegate
+    public class func currentDelegateFor(_ object: AnyObject) -> AnyObject? {
+        let webView: UIWebView = castOrFatalError(object)
+        return webView.delegate
     }
 
-    /// For more information take a look at `DelegateProxyType`.
-    open class func currentDelegate(for object: UIWebView) -> UIWebViewDelegate? {
-        return object.delegate
-    }
+
 }
 
 #endif
