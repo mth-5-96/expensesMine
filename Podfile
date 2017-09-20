@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'expensesMine' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,7 +7,7 @@ target 'expensesMine' do
 
   # Pods for expensesMine
   pod 'RealmSwift'
-  pod 'RxSwift', '~> 3.0'
-  pod 'RxCocoa', '~> 3.0'
+  pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift', :tag => '4.0.0-beta.0'
+  pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift', :tag => '4.0.0-beta.0'
 
 end
