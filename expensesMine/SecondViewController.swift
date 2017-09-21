@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import Eureka
 
-class SecondViewController: UIViewController {
+class SecondViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        form = Section("Settings")
+            +++ DecimalRow("amount") { row in
+                row.title = "Startguthaben"
+                row.placeholder = "0.0"
+            }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

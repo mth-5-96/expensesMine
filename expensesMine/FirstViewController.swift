@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import Eureka
 
-class FirstViewController: UIViewController {
+class FirstViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        navigationItem.title = "Neue Buchung"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(handleDone(sender:)))
+        
+        form = Section("accountingentry")
+            +++ TextAreaRow("note") { row in
+                row.title = "Notiz"
+                row.placeholder = "Notiz"
+            }
+            <<< DecimalRow("amount") { row in
+                row.title = "Betrag"
+                row.placeholder = "Betrag"
+            }
+            <<< DateInlineRow("date") { row in
+                row.title = "Datum"
+                row.value = Date()
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func handleDone(sender: AnyObject?) {
+        let values = form.values()
+        print("\(values)")
     }
-
 
 }
 
