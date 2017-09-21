@@ -13,6 +13,7 @@
 		72B292A61F6BBFAE00783908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A41F6BBFAE00783908 /* Main.storyboard */; };
 		72B292A81F6BBFAE00783908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A71F6BBFAE00783908 /* Assets.xcassets */; };
 		72B292AB1F6BBFAE00783908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */; };
+		72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C39FB41F73DB8800B24CE0 /* Models.swift */; };
 		A8C117201CD5934276932642 /* Pods_expensesMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489160DF3133B5CC731EF846 /* Pods_expensesMine.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		72B292A71F6BBFAE00783908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B292AA1F6BBFAE00783908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72B292AC1F6BBFAE00783908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72C39FB41F73DB8800B24CE0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		9057E46BC73B73393F03F089 /* Pods-expensesMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expensesMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-expensesMine/Pods-expensesMine.release.xcconfig"; sourceTree = "<group>"; };
 		EAA4443C563287F03B87677A /* Pods-expensesMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expensesMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-expensesMine/Pods-expensesMine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				72B2929E1F6BBFAE00783908 /* AppDelegate.swift */,
 				72B292A01F6BBFAE00783908 /* FirstViewController.swift */,
 				72B292A21F6BBFAE00783908 /* SecondViewController.swift */,
+				72C39FB41F73DB8800B24CE0 /* Models.swift */,
 				72B292A41F6BBFAE00783908 /* Main.storyboard */,
 				72B292A71F6BBFAE00783908 /* Assets.xcassets */,
 				72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 				72B292A31F6BBFAE00783908 /* SecondViewController.swift in Sources */,
 				72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */,
 				72B292A11F6BBFAE00783908 /* FirstViewController.swift in Sources */,
+				72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
