@@ -96,7 +96,12 @@
         <scene sceneID="zl2-UH-jEI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F8W-Zg-bTp" userLabel="FirstNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="acW-dT-cKf" customClass="FontAwesomeTabBarItem" customModule="FontAwesome_swift">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-cogs"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-cogs"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="S4B-56-LA1">
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,7 +117,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
