@@ -9,5 +9,15 @@ target 'expensesMine' do
   pod 'RealmSwift'
   pod 'RxSwift', '~> 3.0'
   pod 'RxCocoa', '~> 3.0'
-
+  # pod 'Eureka', '~> 3.0'
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift4'
+  pod 'FontAwesome.swift'
 end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = target.name == 'Eureka' ? '4.0' : '3.2'
+    end
+  end
+end  
