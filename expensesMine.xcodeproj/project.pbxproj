@@ -89,11 +89,11 @@
 				720507951F877A3A00035BCA /* HistoryEntryCell.swift */,
 				72C39FB41F73DB8800B24CE0 /* Models.swift */,
 				7205079B1F87A9CE00035BCA /* Date+Month.swift */,
+				720507991F87866300035BCA /* Provisioning.swift */,
 				72B292A41F6BBFAE00783908 /* Main.storyboard */,
 				72B292A71F6BBFAE00783908 /* Assets.xcassets */,
 				72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */,
 				72B292AC1F6BBFAE00783908 /* Info.plist */,
-				720507991F87866300035BCA /* Provisioning.swift */,
 			);
 			path = expensesMine;
 			sourceTree = "<group>";

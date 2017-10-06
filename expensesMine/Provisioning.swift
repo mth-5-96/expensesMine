@@ -30,7 +30,9 @@ class Provisioning {
             if realm.objects(Category.self).count == 0 {
                 do {
                     try realm.write {
-                        realm.create(Category.self, value: categories, update: false)
+                        for category in categories {
+                            realm.create(Category.self, value: category, update: false)
+                        }
                     }
                 }
                 catch {

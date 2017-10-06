@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(url)
         }
         
+        Provisioning.prefillCategories()
+        
         return true
     }
 

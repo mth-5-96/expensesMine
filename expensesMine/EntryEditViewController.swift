@@ -8,11 +8,20 @@
 
 import UIKit
 import Eureka
+import RealmSwift
 
 class EntryEditViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var categories : [Category] = []
+        do {
+            let realm = try Realm()
+            categories = Array(realm.objects(Category.self))
+        } catch {
+            print(error)
+        }
         
         navigationItem.title = "Neue Buchung"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(handleDone(sender:)))
@@ -25,20 +34,29 @@ class EntryEditViewController: FormViewController {
             <<< DecimalRow("amount") { row in
                 row.title = "Betrag"
                 row.placeholder = "Betrag"
+                row.value = 0.0
             }
             <<< DateTimeInlineRow("date") { row in
                 row.title = "Datum"
                 row.value = Date()
             }
-            <<< PushRow<String>("account") { row in
+            <<< PushRow<Category>("category") { row in
                 row.title = "Konto"
-                row.options = ["Unterhaltung", "Parken", "Benzin"]
+                row.options = categories
+                row.displayValueFor = { $0?.name }
             }
     }
     
     func handleDone(sender: AnyObject?) {
         let values = form.values()
-        print("\(values)")
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.create(AccountingEntry.self, value: values, update: false)
+            }
+        } catch {
+            print(error)
+        }
     }
 
 }
