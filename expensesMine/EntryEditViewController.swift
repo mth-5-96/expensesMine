@@ -9,7 +9,7 @@
 import UIKit
 import Eureka
 
-class FirstViewController: FormViewController {
+class EntryEditViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +17,8 @@ class FirstViewController: FormViewController {
         navigationItem.title = "Neue Buchung"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action:#selector(handleDone(sender:)))
         
-        form = Section("accountingentry")
-            +++ TextAreaRow("note") { row in
+        form +++ Section(header: "Buchung", footer: "")
+            <<< TextAreaRow("note") { row in
                 row.title = "Notiz"
                 row.placeholder = "Notiz"
             }
@@ -26,10 +26,14 @@ class FirstViewController: FormViewController {
                 row.title = "Betrag"
                 row.placeholder = "Betrag"
             }
-            <<< DateInlineRow("date") { row in
+            <<< DateTimeInlineRow("date") { row in
                 row.title = "Datum"
                 row.value = Date()
-        }
+            }
+            <<< PushRow<String>("account") { row in
+                row.title = "Konto"
+                row.options = ["Unterhaltung", "Parken", "Benzin"]
+            }
     }
     
     func handleDone(sender: AnyObject?) {

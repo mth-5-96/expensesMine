@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SettingsViewController.swift
 //  expensesMine
 //
 //  Created by Martin Hochstraßer on 15.09.17.
@@ -9,16 +9,16 @@
 import UIKit
 import Eureka
 
-class SecondViewController: FormViewController {
+class SettingsViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         form = Section("Settings")
             +++ DecimalRow("amount") { row in
-                row.title = "Startguthaben"
-                row.placeholder = "0.0"
-            }
+                    row.title = "Startguthaben"
+                    row.placeholder = "0.0"
+                }
     }
 
 }

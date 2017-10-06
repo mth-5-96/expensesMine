@@ -24,6 +24,8 @@ class AccountingEntry : Object {
     
     dynamic var note = ""
     
+    dynamic var type = "EXPENSE" // or "WITHDRAWAL" or "OPENINGBALANCE"
+    
     dynamic var category : Category?
     
 }
