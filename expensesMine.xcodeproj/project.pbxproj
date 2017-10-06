@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		720507961F877A3A00035BCA /* HistoryEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507951F877A3A00035BCA /* HistoryEntryCell.swift */; };
 		720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507971F877E6D00035BCA /* HistoryViewController.swift */; };
+		7205079A1F87866300035BCA /* Provisioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507991F87866300035BCA /* Provisioning.swift */; };
+		7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205079B1F87A9CE00035BCA /* Date+Month.swift */; };
 		72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B2929E1F6BBFAE00783908 /* AppDelegate.swift */; };
 		72B292A11F6BBFAE00783908 /* EntryEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */; };
 		72B292A31F6BBFAE00783908 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B292A21F6BBFAE00783908 /* SettingsViewController.swift */; };
@@ -23,6 +25,8 @@
 		489160DF3133B5CC731EF846 /* Pods_expensesMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_expensesMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720507951F877A3A00035BCA /* HistoryEntryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntryCell.swift; sourceTree = "<group>"; };
 		720507971F877E6D00035BCA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		720507991F87866300035BCA /* Provisioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisioning.swift; sourceTree = "<group>"; };
+		7205079B1F87A9CE00035BCA /* Date+Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
 		72B2929B1F6BBFAE00783908 /* expensesMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expensesMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B2929E1F6BBFAE00783908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditViewController.swift; sourceTree = "<group>"; };
@@ -81,13 +85,15 @@
 				72B2929E1F6BBFAE00783908 /* AppDelegate.swift */,
 				72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */,
 				72B292A21F6BBFAE00783908 /* SettingsViewController.swift */,
+				720507971F877E6D00035BCA /* HistoryViewController.swift */,
 				720507951F877A3A00035BCA /* HistoryEntryCell.swift */,
 				72C39FB41F73DB8800B24CE0 /* Models.swift */,
+				7205079B1F87A9CE00035BCA /* Date+Month.swift */,
 				72B292A41F6BBFAE00783908 /* Main.storyboard */,
 				72B292A71F6BBFAE00783908 /* Assets.xcassets */,
 				72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */,
 				72B292AC1F6BBFAE00783908 /* Info.plist */,
-				720507971F877E6D00035BCA /* HistoryViewController.swift */,
+				720507991F87866300035BCA /* Provisioning.swift */,
 			);
 			path = expensesMine;
 			sourceTree = "<group>";
@@ -243,6 +249,8 @@
 			files = (
 				72B292A31F6BBFAE00783908 /* SettingsViewController.swift in Sources */,
 				72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */,
+				7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */,
+				7205079A1F87866300035BCA /* Provisioning.swift in Sources */,
 				72B292A11F6BBFAE00783908 /* EntryEditViewController.swift in Sources */,
 				720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */,
 				72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */,

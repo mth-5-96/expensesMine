@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let url = Realm.Configuration().fileURL {
             print(url)
         }
+        
         return true
     }
 

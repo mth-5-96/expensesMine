@@ -7,6 +7,7 @@
 //
 
 import RealmSwift
+import FontAwesome_swift
 
 class Category : Object {
     
@@ -16,11 +17,15 @@ class Category : Object {
     
     dynamic var accountName = ""
     
+    dynamic var icon = FontAwesome.questionCircleO.rawValue
+    
 }
 
 class AccountingEntry : Object {
     
     dynamic var amount : Double = 0.0
+    
+    dynamic var date = Date()
     
     dynamic var note = ""
     

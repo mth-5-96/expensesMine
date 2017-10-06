@@ -14,4 +14,5 @@ class HistoryEntryCell : UITableViewCell {
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
     
+    
 }

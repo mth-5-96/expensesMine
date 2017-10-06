@@ -53,52 +53,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688.8" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="2646" y="-322"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="9Zc-Y7-wZy">
             <objects>
-                <tableViewController id="Eya-iJ-fYN" userLabel="History View Controller" sceneMemberID="viewController">
+                <tableViewController id="Eya-iJ-fYN" userLabel="History View Controller" customClass="HistoryViewController" customModule="expensesMine" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="85a-K7-ghq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="40" id="sH9-IG-Msj" customClass="HistoryEntryCell" customModule="expensesMine" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="40"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="sH9-IG-Msj" customClass="HistoryEntryCell" customModule="expensesMine" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sH9-IG-Msj" id="Qqc-PL-bBa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-7C-pj8" userLabel="Note">
-                                            <rect key="frame" x="8" y="0.0" width="270.5" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Esther Anteil Péage St. Avold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-7C-pj8" userLabel="Note">
+                                            <rect key="frame" x="8" y="4" width="270.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-KL-enW" userLabel="CategoryName">
-                                            <rect key="frame" x="8" y="27" width="45" height="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aufwendungen:Urlaub:Disneyland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-KL-enW" userLabel="CategoryName">
+                                            <rect key="frame" x="8" y="30" width="163.5" height="15.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.71690819300518127" green="0.71690819300518127" blue="0.71690819300518127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-999,99 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMi-Bt-3JH" userLabel="Amount">
-                                            <rect key="frame" x="288.5" y="0.0" width="78.5" height="39"/>
+                                            <rect key="frame" x="288.5" y="0.0" width="78.5" height="49"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="OfH-7C-pj8" firstAttribute="top" secondItem="Qqc-PL-bBa" secondAttribute="top" id="2Sw-ns-4c3"/>
+                                        <constraint firstItem="OfH-7C-pj8" firstAttribute="top" secondItem="Qqc-PL-bBa" secondAttribute="top" constant="4" id="2Sw-ns-4c3"/>
+                                        <constraint firstItem="zLA-KL-enW" firstAttribute="top" secondItem="OfH-7C-pj8" secondAttribute="bottom" constant="5" id="5ZX-Rm-dEe"/>
                                         <constraint firstItem="OfH-7C-pj8" firstAttribute="leading" secondItem="Qqc-PL-bBa" secondAttribute="leading" constant="8" id="8Os-RF-oSw"/>
                                         <constraint firstItem="PMi-Bt-3JH" firstAttribute="top" secondItem="Qqc-PL-bBa" secondAttribute="top" id="C9e-Er-kTa"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="PMi-Bt-3JH" secondAttribute="trailing" id="EYv-Gs-3Yq"/>
                                         <constraint firstAttribute="bottom" secondItem="PMi-Bt-3JH" secondAttribute="bottom" constant="0.5" id="FBa-Zv-WIW"/>
                                         <constraint firstItem="PMi-Bt-3JH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="zLA-KL-enW" secondAttribute="trailing" constant="236" id="PaJ-fn-z4n"/>
                                         <constraint firstItem="zLA-KL-enW" firstAttribute="leading" secondItem="Qqc-PL-bBa" secondAttribute="leading" constant="8" id="V1U-0t-KM0"/>
-                                        <constraint firstAttribute="bottom" secondItem="zLA-KL-enW" secondAttribute="bottom" constant="0.5" id="isl-yO-xc8"/>
+                                        <constraint firstAttribute="bottom" secondItem="zLA-KL-enW" secondAttribute="bottom" constant="4" id="isl-yO-xc8"/>
                                         <constraint firstItem="PMi-Bt-3JH" firstAttribute="leading" secondItem="OfH-7C-pj8" secondAttribute="trailing" constant="10" id="tEr-Vi-GOE"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -114,10 +115,11 @@
                             <outlet property="delegate" destination="Eya-iJ-fYN" id="z8C-PF-huE"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Verlauf" id="MDb-8y-MCO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhH-sI-pha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597.5999999999999" y="-317.09145427286359"/>
+            <point key="canvasLocation" x="1697" y="-321"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wg7-f3-ORb">
@@ -178,7 +180,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="FG0-mx-oTi"/>
+                        <segue destination="Eya-iJ-fYN" kind="relationship" relationship="rootViewController" id="0gk-jc-uRx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nQ-eA-Gba" userLabel="First Responder" sceneMemberID="firstResponder"/>
