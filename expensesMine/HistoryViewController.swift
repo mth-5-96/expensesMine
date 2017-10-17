@@ -42,9 +42,11 @@ class HistoryViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! HistoryEntryCell
-        cell.amountLabel.text = "-100.00 €"
-        cell.categoryLabel.text = items[0][indexPath.row].category?.name
-        cell.noteLabel.text = items[0][indexPath.row].note
+        let entry = items[0][indexPath.row]
+        cell.amountLabel.text = String(format: "%3.2f €", entry.amount)
+        cell.amountLabel.textColor = entry.amount < 0 ? UIColor.red : UIColor.green
+        cell.categoryLabel.text = entry.category?.name
+        cell.noteLabel.text = entry.note
         return cell
     }
     
