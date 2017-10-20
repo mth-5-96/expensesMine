@@ -12,6 +12,8 @@ import RealmSwift
 
 class EntryEditViewController: FormViewController {
 
+    var entry : AccountingEntry?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,15 +32,16 @@ class EntryEditViewController: FormViewController {
             <<< TextAreaRow("note") { row in
                 row.title = "Notiz"
                 row.placeholder = "Notiz"
+                row.value = entry?.note
             }
             <<< DecimalRow("amount") { row in
                 row.title = "Betrag"
                 row.placeholder = "Betrag"
-                row.value = 0.0
+                row.value = entry?.amount ?? -0.0
             }
             <<< DateTimeInlineRow("date") { row in
                 row.title = "Datum"
-                row.value = Date()
+                row.value = entry?.date ?? Date()
             }
             <<< PushRow<Category>("category") { row in
                 row.title = "Konto"

@@ -50,6 +50,12 @@ class HistoryViewController : UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EntryEditVC") as! EntryEditViewController
+        vc.entry = items[0][indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func handleAdd(_ sender: AnyObject?) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EntryEditVC")
         self.navigationController?.pushViewController(vc, animated: true)
