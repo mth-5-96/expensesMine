@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -72,19 +72,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Esther Anteil Péage St. Avold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-7C-pj8" userLabel="Note">
-                                            <rect key="frame" x="8" y="4" width="270.5" height="21"/>
+                                            <rect key="frame" x="8" y="4" width="221" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aufwendungen:Urlaub:Disneyland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-KL-enW" userLabel="CategoryName">
-                                            <rect key="frame" x="8" y="30" width="163.5" height="15.5"/>
+                                            <rect key="frame" x="8" y="30" width="231" height="15.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="Efo-Y9-41U"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" red="0.71690819300518127" green="0.71690819300518127" blue="0.71690819300518127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-999,99 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMi-Bt-3JH" userLabel="Amount">
-                                            <rect key="frame" x="288.5" y="0.0" width="78.5" height="49"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-999,99 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMi-Bt-3JH" userLabel="Amount">
+                                            <rect key="frame" x="239" y="0.0" width="128" height="49"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -97,7 +100,7 @@
                                         <constraint firstItem="PMi-Bt-3JH" firstAttribute="top" secondItem="Qqc-PL-bBa" secondAttribute="top" id="C9e-Er-kTa"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="PMi-Bt-3JH" secondAttribute="trailing" id="EYv-Gs-3Yq"/>
                                         <constraint firstAttribute="bottom" secondItem="PMi-Bt-3JH" secondAttribute="bottom" constant="0.5" id="FBa-Zv-WIW"/>
-                                        <constraint firstItem="PMi-Bt-3JH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="zLA-KL-enW" secondAttribute="trailing" constant="236" id="PaJ-fn-z4n"/>
+                                        <constraint firstItem="PMi-Bt-3JH" firstAttribute="leading" relation="lessThanOrEqual" secondItem="zLA-KL-enW" secondAttribute="trailing" id="PaJ-fn-z4n"/>
                                         <constraint firstItem="zLA-KL-enW" firstAttribute="leading" secondItem="Qqc-PL-bBa" secondAttribute="leading" constant="8" id="V1U-0t-KM0"/>
                                         <constraint firstAttribute="bottom" secondItem="zLA-KL-enW" secondAttribute="bottom" constant="4" id="isl-yO-xc8"/>
                                         <constraint firstItem="PMi-Bt-3JH" firstAttribute="leading" secondItem="OfH-7C-pj8" secondAttribute="trailing" constant="10" id="tEr-Vi-GOE"/>
