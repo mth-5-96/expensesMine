@@ -39,6 +39,7 @@ class EntryEditViewController: FormViewController {
                 row.placeholder = "Betrag"
                 row.value = entry?.amount ?? -0.0
             }
+            .cellSetup({ (c,_) in c.textField.keyboardType = .numbersAndPunctuation })
             <<< DateTimeInlineRow("date") { row in
                 row.title = "Datum"
                 row.value = entry?.date ?? Date()
