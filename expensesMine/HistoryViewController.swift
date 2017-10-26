@@ -31,6 +31,7 @@ class HistoryViewController : UITableViewController {
             let entries = realm.objects(AccountingEntry.self).filter("date BETWEEN {%@, %@}", startDate, endDate)
             items.append([])
             items[0].append(contentsOf: entries)
+            tableView.reloadData()
         } catch {
             print(error)
         }

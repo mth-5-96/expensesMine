@@ -58,6 +58,7 @@ class EntryEditViewController: FormViewController {
             try realm.write {
                 realm.create(AccountingEntry.self, value: values, update: false)
             }
+            navigationController?.popViewController(animated: true)
         } catch {
             print(error)
         }
