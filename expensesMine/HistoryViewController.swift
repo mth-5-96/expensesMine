@@ -28,7 +28,10 @@ class HistoryViewController : UITableViewController {
         
         do {
             let realm = try Realm()
-            let entries = realm.objects(AccountingEntry.self).filter("date BETWEEN {%@, %@}", startDate, endDate)
+            let entries = realm
+                .objects(AccountingEntry.self)
+                .filter("date BETWEEN {%@, %@}", startDate, endDate)
+                .sorted(byKeyPath: "date", ascending: true)
             items.append([])
             items[0].append(contentsOf: entries)
             tableView.reloadData()
@@ -77,7 +80,7 @@ class HistoryViewController : UITableViewController {
         } catch {
             print(error)
         }
-        tableView.reloadData()
+        tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
     func handleAdd(_ sender: AnyObject?) {
