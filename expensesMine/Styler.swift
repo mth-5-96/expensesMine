@@ -16,11 +16,8 @@ public class Styler {
     static var YELLOW = UIColor(red: 0xE5/0xFF, green: 0xBB/0xFF, blue: 0x49/0xFF, alpha: 1.0)
     static var GRAY   = UIColor(red: 0x47/0xFF, green: 0x47/0xFF, blue: 0x47/0xFF, alpha: 1.0)
     
-    
     class func applyStyle() {
-        
         UITableView.appearance(whenContainedInInstancesOf: [HistoryViewController.self]).backgroundColor = GRAY
         UITableViewCell.appearance(whenContainedInInstancesOf: [HistoryViewController.self]).backgroundColor = GRAY
     }
-    
 }

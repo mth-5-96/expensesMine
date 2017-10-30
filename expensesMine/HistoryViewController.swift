@@ -60,6 +60,26 @@ class HistoryViewController : UITableViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Löschen") { (rowAction, indexPath) in
+            self.handleDelete(indexPath)
+        }
+        return [delete]
+    }
+    
+    func handleDelete(_ indexPath: IndexPath) {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(items[0][indexPath.row])
+                items[0].remove(at: indexPath.row)
+            }
+        } catch {
+            print(error)
+        }
+        tableView.reloadData()
+    }
+    
     func handleAdd(_ sender: AnyObject?) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EntryEditVC")
         self.navigationController?.pushViewController(vc, animated: true)
