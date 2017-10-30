@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         Provisioning.prefillCategories()
+        Styler.applyStyle()
         
         return true
     }

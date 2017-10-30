@@ -45,9 +45,11 @@ class HistoryViewController : UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! HistoryEntryCell
         let entry = items[0][indexPath.row]
         cell.amountLabel.text = String(format: "%3.2f €", entry.amount)
-        cell.amountLabel.textColor = entry.amount < 0 ? UIColor.red : UIColor.green
+        cell.amountLabel.textColor = entry.amount < 0 ? Styler.RED : Styler.GREEN
         cell.categoryLabel.text = entry.category?.name
+        cell.categoryLabel.textColor = Styler.YELLOW
         cell.noteLabel.text = entry.note
+        cell.noteLabel.textColor = Styler.WHITE
         return cell
     }
     
