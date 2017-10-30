@@ -19,6 +19,8 @@
 		72B292AB1F6BBFAE00783908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */; };
 		72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C39FB41F73DB8800B24CE0 /* Models.swift */; };
 		72F790FE1FA710C700455334 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F790FD1FA710C700455334 /* Styler.swift */; };
+		72F791011FA72FB800455334 /* Buenard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */; };
+		72F791021FA72FB800455334 /* Buenard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F791001FA72FB800455334 /* Buenard-Regular.ttf */; };
 		A8C117201CD5934276932642 /* Pods_expensesMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489160DF3133B5CC731EF846 /* Pods_expensesMine.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		72B292AC1F6BBFAE00783908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72C39FB41F73DB8800B24CE0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		72F790FD1FA710C700455334 /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
+		72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buenard-Bold.ttf"; sourceTree = "<group>"; };
+		72F791001FA72FB800455334 /* Buenard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buenard-Regular.ttf"; sourceTree = "<group>"; };
 		9057E46BC73B73393F03F089 /* Pods-expensesMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expensesMine.release.xcconfig"; path = "Pods/Target Support Files/Pods-expensesMine/Pods-expensesMine.release.xcconfig"; sourceTree = "<group>"; };
 		EAA4443C563287F03B87677A /* Pods-expensesMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expensesMine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-expensesMine/Pods-expensesMine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,8 +101,18 @@
 				72B292A71F6BBFAE00783908 /* Assets.xcassets */,
 				72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */,
 				72B292AC1F6BBFAE00783908 /* Info.plist */,
+				72F791031FA72FC900455334 /* Resources */,
 			);
 			path = expensesMine;
+			sourceTree = "<group>";
+		};
+		72F791031FA72FC900455334 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */,
+				72F791001FA72FB800455334 /* Buenard-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D3E943057C769FFF4BB218A9 /* Frameworks */ = {
@@ -174,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B292AB1F6BBFAE00783908 /* LaunchScreen.storyboard in Resources */,
+				72F791021FA72FB800455334 /* Buenard-Regular.ttf in Resources */,
 				72B292A81F6BBFAE00783908 /* Assets.xcassets in Resources */,
 				72B292A61F6BBFAE00783908 /* Main.storyboard in Resources */,
+				72F791011FA72FB800455334 /* Buenard-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

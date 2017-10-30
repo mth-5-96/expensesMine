@@ -21,7 +21,6 @@ public class Styler {
         
         UITableView.appearance(whenContainedInInstancesOf: [HistoryViewController.self]).backgroundColor = GRAY
         UITableViewCell.appearance(whenContainedInInstancesOf: [HistoryViewController.self]).backgroundColor = GRAY
-        
     }
     
 }
