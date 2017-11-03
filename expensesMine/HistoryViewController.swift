@@ -96,13 +96,20 @@ class HistoryViewController : UITableViewController {
             let realm = try Realm()
             try realm.write {
                 realm.delete(items[headers[indexPath.section]]![indexPath.row])
-                items[headers[indexPath.section]]?.remove(at: indexPath.row)
             }
         } catch {
             print(error)
         }
         
+        tableView.beginUpdates()
         tableView.deleteRows(at: [indexPath], with: .automatic)
+        items[headers[indexPath.section]]?.remove(at: indexPath.row)
+        if items[headers[indexPath.section]]!.isEmpty {
+            items.removeValue(forKey: headers[indexPath.section])
+            headers.remove(at: indexPath.section)
+            tableView.deleteSections(IndexSet(integer:indexPath.section), with: .automatic)
+        }
+        tableView.endUpdates()
     }
     
     func handleAdd(_ sender: AnyObject?) {
