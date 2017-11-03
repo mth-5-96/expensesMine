@@ -16,7 +16,7 @@ class HistoryViewController : UITableViewController {
     var startDate = Date().startOfMonth()
     var endDate = Date().endOfMonth()
     
-    var items = [[AccountingEntry]]()
+    var items = [String: [AccountingEntry]]()
     var headers = [String]()
     
     override func viewDidLoad() {
@@ -37,20 +37,15 @@ class HistoryViewController : UITableViewController {
             
             let df = DateFormatter()
             df.dateFormat = "dd.MM.yyyy"
-            
-            var last = df.string(from:entries[0].date)
-            var current = [AccountingEntry]()
+
             for entry in entries {
-                let next = df.string(from: entry.date)
-                current.append(entry)
-                if next != last {
-                    headers.append(last)
-                    items.append(current)
-                    current = [AccountingEntry]()
-                    last = next
+                let key = df.string(from: entry.date)
+                if items[key] == nil {
+                    items[key] = [AccountingEntry]()
                 }
+                items[key]?.append(entry)
             }
-            headers.append(last)
+            headers = Array(items.keys).sorted()
             
             tableView.reloadData()
         } catch {
@@ -63,7 +58,7 @@ class HistoryViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items[section].count
+        return items[headers[section]]!.count
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -72,7 +67,7 @@ class HistoryViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! HistoryEntryCell
-        let entry = items[indexPath.section][indexPath.row]
+        let entry = items[headers[indexPath.section]]![indexPath.row]
         
         cell.amountLabel.text = String(format: "%3.2f €", entry.amount)
         cell.amountLabel.textColor = entry.amount < 0 ? Styler.RED : Styler.GREEN
@@ -85,7 +80,7 @@ class HistoryViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EntryEditVC") as! EntryEditViewController
-        vc.entry = items[indexPath.section][indexPath.row]
+        vc.entry = items[headers[indexPath.section]]![indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -100,12 +95,13 @@ class HistoryViewController : UITableViewController {
         do {
             let realm = try Realm()
             try realm.write {
-                realm.delete(items[indexPath.section][indexPath.row])
-                items[indexPath.section].remove(at: indexPath.row)
+                realm.delete(items[headers[indexPath.section]]![indexPath.row])
+                items[headers[indexPath.section]]?.remove(at: indexPath.row)
             }
         } catch {
             print(error)
         }
+        
         tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     
