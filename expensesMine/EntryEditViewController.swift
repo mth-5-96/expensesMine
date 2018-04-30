@@ -47,16 +47,22 @@ class EntryEditViewController: FormViewController {
             <<< PushRow<Category>("category") { row in
                 row.title = "Konto"
                 row.options = categories
+                row.value = entry?.category
                 row.displayValueFor = { $0?.name }
             }
     }
     
     func handleDone(sender: AnyObject?) {
-        let values = form.values()
+        var values = form.values()
+        if let ent = entry {
+            values["id"] = ent.id
+        } else {
+            values["id"] = UUID().uuidString;
+        }
         do {
             let realm = try Realm()
             try realm.write {
-                realm.create(AccountingEntry.self, value: values, update: false)
+                realm.create(AccountingEntry.self, value: values, update: true)
             }
             navigationController?.popViewController(animated: true)
         } catch {

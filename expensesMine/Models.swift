@@ -11,6 +11,8 @@ import FontAwesome_swift
 
 class Category : Object {
     
+    dynamic var id = UUID().uuidString
+    
     dynamic var name = ""
     
     dynamic var lastAccessed = Date()
@@ -19,9 +21,14 @@ class Category : Object {
     
     dynamic var icon = FontAwesome.questionCircleO.rawValue
     
+    override class func primaryKey() -> String {
+        return "id"
+    }
 }
 
 class AccountingEntry : Object {
+    
+    dynamic var id = UUID().uuidString
     
     dynamic var amount : Double = 0.0
     
@@ -33,4 +40,7 @@ class AccountingEntry : Object {
     
     dynamic var category : Category?
     
+    override class func primaryKey() -> String {
+        return "id"
+    }
 }
