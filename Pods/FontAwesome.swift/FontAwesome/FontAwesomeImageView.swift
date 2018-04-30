@@ -22,37 +22,37 @@
 
 import UIKit
 
-@IBDesignable class FontAwesomeImageView: UIImageView {
-    
-    @IBInspectable var cssCode: String = "fa-square-o"
-    @IBInspectable var imageColor: UIColor = .black
-    @IBInspectable var imageBackgroundColor: UIColor = .clear
-    
-    override func awakeFromNib() {
+@IBDesignable public class FontAwesomeImageView: UIImageView {
+
+    @IBInspectable public var cssCode: String = "fa-square-o"
+    @IBInspectable public var imageColor: UIColor = .black
+    @IBInspectable public var imageBackgroundColor: UIColor = .clear
+
+    public override func awakeFromNib() {
         super.awakeFromNib()
         useFontAwesomeImage()
     }
-    
-    override func prepareForInterfaceBuilder() {
+
+    public override func prepareForInterfaceBuilder() {
         useFontAwesomeImage()
     }
-    
+
     private func useFontAwesomeImage() {
         createImages { (img, _) in
             image = img
         }
     }
-    
+
 }
 
 extension FontAwesomeImageView: FontAwesomeImageRepresentable {
-    
+
     var imageWidth: CGFloat {
         return frame.width
     }
-    
+
     var imageConfigs: [ImageConfig] {
         return [(cssCode, imageColor, imageBackgroundColor)]
     }
-    
+
 }
