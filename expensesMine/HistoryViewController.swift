@@ -72,9 +72,9 @@ class HistoryViewController : UITableViewController {
         cell.amountLabel.text = String(format: "%3.2f €", entry.amount)
         cell.amountLabel.textColor = entry.amount < 0 ? Styler.RED : Styler.GREEN
         cell.categoryLabel.text = entry.category?.name
-        cell.categoryLabel.textColor = Styler.YELLOW
+        cell.categoryLabel.textColor = Styler.GRAY
         cell.noteLabel.text = entry.note
-        cell.noteLabel.textColor = Styler.WHITE
+        cell.noteLabel.textColor = Styler.GRAY
         return cell
     }
     
