@@ -67,13 +67,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Esther Anteil Péage St. Avold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfH-7C-pj8" userLabel="Note">
-                                            <rect key="frame" x="8" y="4" width="208" height="16.5"/>
+                                            <rect key="frame" x="8" y="4" width="208" height="32.5"/>
                                             <fontDescription key="fontDescription" name="DamascusMedium" family="Damascus" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aufwendungen:Urlaub:Disneyland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLA-KL-enW" userLabel="CategoryName">
-                                            <rect key="frame" x="8" y="25.5" width="218" height="14"/>
+                                            <rect key="frame" x="8" y="41.5" width="218" height="14"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="lessThanOrEqual" constant="14" id="Efo-Y9-41U"/>
                                             </constraints>
@@ -82,8 +82,8 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-999,99 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMi-Bt-3JH" userLabel="Amount">
-                                            <rect key="frame" x="226" y="0.0" width="133" height="43"/>
-                                            <fontDescription key="fontDescription" name="DamascusSemiBold" family="Damascus" pointSize="20"/>
+                                            <rect key="frame" x="226" y="0.0" width="133" height="59"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
