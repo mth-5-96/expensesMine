@@ -52,7 +52,7 @@ class EntryEditViewController: FormViewController {
             }
     }
     
-    func handleDone(sender: AnyObject?) {
+    @objc func handleDone(sender: AnyObject?) {
         var values = form.values()
         if let ent = entry {
             values["id"] = ent.id
@@ -62,7 +62,7 @@ class EntryEditViewController: FormViewController {
         do {
             let realm = try Realm()
             try realm.write {
-                realm.create(AccountingEntry.self, value: values, update: true)
+                realm.create(AccountingEntry.self, value: values, update: .all)
             }
             navigationController?.popViewController(animated: true)
         } catch {

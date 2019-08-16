@@ -31,7 +31,7 @@ class Provisioning {
                 do {
                     try realm.write {
                         for category in categories {
-                            realm.create(Category.self, value: category, update: false)
+                            realm.create(Category.self, value: category, update: .all)
                         }
                     }
                 }

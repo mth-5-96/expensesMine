@@ -112,7 +112,7 @@ class HistoryViewController : UITableViewController {
         tableView.endUpdates()
     }
     
-    func handleAdd(_ sender: AnyObject?) {
+    @objc func handleAdd(_ sender: AnyObject?) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EntryEditVC")
         self.navigationController?.pushViewController(vc, animated: true)
     }

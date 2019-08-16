@@ -19,7 +19,7 @@ class Category : Object {
     
     dynamic var accountName = ""
     
-    dynamic var icon = FontAwesome.questionCircleO.rawValue
+    dynamic var icon = FontAwesome.questionCircle.rawValue
     
     override class func primaryKey() -> String {
         return "id"
