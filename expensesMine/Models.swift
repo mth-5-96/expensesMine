@@ -11,15 +11,15 @@ import FontAwesome_swift
 
 class Category : Object {
     
-    dynamic var id = UUID().uuidString
+    @objc dynamic var id = UUID().uuidString
     
-    dynamic var name = ""
+    @objc dynamic var name = ""
     
-    dynamic var lastAccessed = Date()
+    @objc dynamic var lastAccessed = Date()
     
-    dynamic var accountName = ""
+    @objc dynamic var accountName = ""
     
-    dynamic var icon = FontAwesome.questionCircle.rawValue
+    @objc dynamic var icon = FontAwesome.questionCircle.rawValue
     
     override class func primaryKey() -> String {
         return "id"
@@ -28,17 +28,17 @@ class Category : Object {
 
 class AccountingEntry : Object {
     
-    dynamic var id = UUID().uuidString
+    @objc dynamic var id = UUID().uuidString
     
-    dynamic var amount : Double = 0.0
+    @objc dynamic var amount : Double = 0.0
     
-    dynamic var date = Date()
+    @objc dynamic var date = Date()
     
-    dynamic var note = ""
+    @objc dynamic var note = ""
     
-    dynamic var type = "EXPENSE" // or "WITHDRAWAL" or "OPENINGBALANCE"
+    @objc dynamic var type = "EXPENSE" // or "WITHDRAWAL" or "OPENINGBALANCE"
     
-    dynamic var category : Category?
+    @objc dynamic var category : Category?
     
     override class func primaryKey() -> String {
         return "id"
