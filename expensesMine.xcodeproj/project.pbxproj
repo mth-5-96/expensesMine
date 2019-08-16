@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507971F877E6D00035BCA /* HistoryViewController.swift */; };
 		7205079A1F87866300035BCA /* Provisioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507991F87866300035BCA /* Provisioning.swift */; };
 		7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205079B1F87A9CE00035BCA /* Date+Month.swift */; };
+		7242F394230752400083047B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F390230752400083047B /* Realm.framework */; };
+		7242F395230752400083047B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F391230752400083047B /* FontAwesome.framework */; };
+		7242F396230752400083047B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F392230752400083047B /* Eureka.framework */; };
+		7242F397230752400083047B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F393230752400083047B /* RealmSwift.framework */; };
 		72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B2929E1F6BBFAE00783908 /* AppDelegate.swift */; };
 		72B292A11F6BBFAE00783908 /* EntryEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */; };
 		72B292A31F6BBFAE00783908 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B292A21F6BBFAE00783908 /* SettingsViewController.swift */; };
@@ -28,6 +32,10 @@
 		720507971F877E6D00035BCA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		720507991F87866300035BCA /* Provisioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisioning.swift; sourceTree = "<group>"; };
 		7205079B1F87A9CE00035BCA /* Date+Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
+		7242F390230752400083047B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		7242F391230752400083047B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		7242F392230752400083047B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		7242F393230752400083047B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		72B2929B1F6BBFAE00783908 /* expensesMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expensesMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B2929E1F6BBFAE00783908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditViewController.swift; sourceTree = "<group>"; };
@@ -47,17 +55,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7242F394230752400083047B /* Realm.framework in Frameworks */,
+				7242F395230752400083047B /* FontAwesome.framework in Frameworks */,
+				7242F396230752400083047B /* Eureka.framework in Frameworks */,
+				7242F397230752400083047B /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7242F38F230752400083047B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7242F392230752400083047B /* Eureka.framework */,
+				7242F391230752400083047B /* FontAwesome.framework */,
+				7242F390230752400083047B /* Realm.framework */,
+				7242F393230752400083047B /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		72B292921F6BBFAE00783908 = {
 			isa = PBXGroup;
 			children = (
 				72B2929D1F6BBFAE00783908 /* expensesMine */,
 				72B2929C1F6BBFAE00783908 /* Products */,
+				7242F38F230752400083047B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +133,7 @@
 				72B292971F6BBFAE00783908 /* Sources */,
 				72B292981F6BBFAE00783908 /* Frameworks */,
 				72B292991F6BBFAE00783908 /* Resources */,
+				7242F398230752740083047B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,6 +194,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7242F398230752740083047B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72B292971F6BBFAE00783908 /* Sources */ = {
@@ -316,7 +363,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -327,9 +375,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TT5TKR2HF9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = expensesMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosconcepts.expensesMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -341,9 +396,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TT5TKR2HF9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = expensesMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.chaosconcepts.expensesMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

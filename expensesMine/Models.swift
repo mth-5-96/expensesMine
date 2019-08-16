@@ -7,7 +7,7 @@
 //
 
 import RealmSwift
-import FontAwesome_swift
+import FontAwesome
 
 class Category : Object {
     
