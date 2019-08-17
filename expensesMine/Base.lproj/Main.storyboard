@@ -133,8 +133,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" id="cPa-gy-q4n" customClass="FontAwesomeTabBarItem" customModule="FontAwesome">
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-cogs"/>
-                            <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-cogs"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-cog"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-cog"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="Solid"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                 </viewController>
@@ -169,6 +173,10 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="iconName" value="fa-history"/>
                             <userDefinedRuntimeAttribute type="string" keyPath="selectedIconName" value="fa-history"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="Solid"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="size">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <toolbarItems/>
