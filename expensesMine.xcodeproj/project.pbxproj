@@ -11,6 +11,7 @@
 		720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507971F877E6D00035BCA /* HistoryViewController.swift */; };
 		7205079A1F87866300035BCA /* Provisioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507991F87866300035BCA /* Provisioning.swift */; };
 		7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205079B1F87A9CE00035BCA /* Date+Month.swift */; };
+		722CB5FE230C6AF1000744AF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */; };
 		7242F394230752400083047B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F390230752400083047B /* Realm.framework */; };
 		7242F395230752400083047B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F391230752400083047B /* FontAwesome.framework */; };
 		7242F396230752400083047B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F392230752400083047B /* Eureka.framework */; };
@@ -32,6 +33,7 @@
 		720507971F877E6D00035BCA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		720507991F87866300035BCA /* Provisioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisioning.swift; sourceTree = "<group>"; };
 		7205079B1F87A9CE00035BCA /* Date+Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
+		722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		7242F390230752400083047B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		7242F391230752400083047B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
 		7242F392230752400083047B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */,
 				72B292A21F6BBFAE00783908 /* SettingsViewController.swift */,
 				720507971F877E6D00035BCA /* HistoryViewController.swift */,
+				722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */,
 				720507951F877A3A00035BCA /* HistoryEntryCell.swift */,
 				72C39FB41F73DB8800B24CE0 /* Models.swift */,
 				72F790FD1FA710C700455334 /* Styler.swift */,
@@ -227,6 +230,7 @@
 				72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */,
 				7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */,
 				7205079A1F87866300035BCA /* Provisioning.swift in Sources */,
+				722CB5FE230C6AF1000744AF /* StartScreenViewController.swift in Sources */,
 				72B292A11F6BBFAE00783908 /* EntryEditViewController.swift in Sources */,
 				720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */,
 				72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */,
