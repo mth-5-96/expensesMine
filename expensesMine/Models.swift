@@ -44,3 +44,19 @@ class AccountingEntry : Object {
         return "id"
     }
 }
+
+extension AccountingEntry {
+    func toQifEntry() -> String {
+        let format = DateFormatter()
+        format.dateFormat = "MM/dd/yyyy"
+        
+        let result = """
+            D\(format.string(from: date))
+            T\(String(format: "%3.2f", amount))
+            L\(category!.accountName)
+            M\(note)
+            ^
+            """
+        return result
+    }
+}
