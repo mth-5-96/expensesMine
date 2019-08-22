@@ -24,7 +24,7 @@ class StartScreenViewController : UIViewController {
                 sum + entry.amount
             }
             
-            amountLabel.text = "\(sum) €"
+            amountLabel.text = "\(String(format: "%3.2f", sum)) €"
         } catch {
             print(error)
         }

@@ -37,7 +37,7 @@ class EntryEditViewController: FormViewController {
             <<< DecimalRow("amount") { row in
                 row.title = "Betrag"
                 row.placeholder = "Betrag"
-                row.value = entry?.amount ?? -0.0
+                row.value = entry?.amount
             }
             .cellSetup({ (c,_) in c.textField.keyboardType = .numbersAndPunctuation })
             <<< DateTimeInlineRow("date") { row in

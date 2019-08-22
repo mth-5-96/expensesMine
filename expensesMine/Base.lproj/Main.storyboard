@@ -181,7 +181,7 @@
                             <constraint firstItem="nxg-bd-EHx" firstAttribute="top" secondItem="nsB-Ib-D8c" secondAttribute="top" id="wyT-ov-9K4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="expensesMine" id="nUA-Wx-X5K"/>
+                    <navigationItem key="navigationItem" title="Overview" id="nUA-Wx-X5K"/>
                     <connections>
                         <outlet property="amountLabel" destination="0ue-Ly-qtl" id="oV0-mm-2mi"/>
                     </connections>
