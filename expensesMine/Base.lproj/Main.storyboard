@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="-322"/>
+            <point key="canvasLocation" x="1681" y="359"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="9Zc-Y7-wZy">
@@ -116,7 +116,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhH-sI-pha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1681" y="368"/>
+            <point key="canvasLocation" x="2647" y="-322"/>
         </scene>
         <!--Start Screen View Controller-->
         <scene sceneID="CB9-yk-tnr">
@@ -130,7 +130,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nsB-Ib-D8c" customClass="FontAwesomeImageView" customModule="FontAwesome">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nsB-Ib-D8c" customClass="FontAwesomeImageView" customModule="FontAwesome">
                                 <rect key="frame" x="204" y="159" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="Asa-uG-Chj"/>
@@ -143,6 +143,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleName" value="Solid"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DNi-o6-Fcf" appends="YES" id="Ggb-Nw-Pop"/>
+                                </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nxg-bd-EHx" customClass="FontAwesomeImageView" customModule="FontAwesome">
                                 <rect key="frame" x="61" y="159" width="110" height="110"/>
@@ -190,6 +193,11 @@
                 <tapGestureRecognizer id="N4B-Bd-zmi">
                     <connections>
                         <segue destination="Eya-iJ-fYN" kind="show" id="qtq-ge-1eZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DNi-o6-Fcf">
+                    <connections>
+                        <segue destination="Eya-iJ-fYN" kind="show" id="XMb-uZ-VA0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -271,4 +279,7 @@
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XMb-uZ-VA0"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,10 @@
 import UIKit
 import RealmSwift
 
+enum ExpenseMode {
+    case plus
+    case minus
+}
 
 class HistoryViewController : UITableViewController {
     
@@ -17,6 +21,8 @@ class HistoryViewController : UITableViewController {
     
     var items = [String: [AccountingEntry]]()
     var headers = [String]()
+    
+    var mode: ExpenseMode = .minus
     
     override func viewDidLoad() {
         super.viewDidLoad()
