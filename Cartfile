@@ -1,3 +1,3 @@
-github "realm/realm-cocoa" ~> 3.0 
-github "xmartlabs/Eureka" ~> 5.0
+github "realm/realm-cocoa" 
+github "xmartlabs/Eureka" 
 github "thii/FontAwesome.swift"
