@@ -12,6 +12,8 @@
 		7205079A1F87866300035BCA /* Provisioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720507991F87866300035BCA /* Provisioning.swift */; };
 		7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7205079B1F87A9CE00035BCA /* Date+Month.swift */; };
 		722CB5FE230C6AF1000744AF /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */; };
+		723E2C8724019027003BEA07 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723E2C8524019027003BEA07 /* Alamofire.framework */; };
+		723E2C8924019027003BEA07 /* SwiftyDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723E2C8624019027003BEA07 /* SwiftyDropbox.framework */; };
 		7242F394230752400083047B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F390230752400083047B /* Realm.framework */; };
 		7242F395230752400083047B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F391230752400083047B /* FontAwesome.framework */; };
 		7242F396230752400083047B /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7242F392230752400083047B /* Eureka.framework */; };
@@ -34,6 +36,8 @@
 		720507991F87866300035BCA /* Provisioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provisioning.swift; sourceTree = "<group>"; };
 		7205079B1F87A9CE00035BCA /* Date+Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
 		722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		723E2C8524019027003BEA07 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		723E2C8624019027003BEA07 /* SwiftyDropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyDropbox.framework; path = Carthage/Build/iOS/SwiftyDropbox.framework; sourceTree = "<group>"; };
 		7242F390230752400083047B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		7242F391230752400083047B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
 		7242F392230752400083047B /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
@@ -58,8 +62,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7242F394230752400083047B /* Realm.framework in Frameworks */,
+				723E2C8924019027003BEA07 /* SwiftyDropbox.framework in Frameworks */,
 				7242F395230752400083047B /* FontAwesome.framework in Frameworks */,
 				7242F396230752400083047B /* Eureka.framework in Frameworks */,
+				723E2C8724019027003BEA07 /* Alamofire.framework in Frameworks */,
 				7242F397230752400083047B /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +76,8 @@
 		7242F38F230752400083047B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				723E2C8524019027003BEA07 /* Alamofire.framework */,
+				723E2C8624019027003BEA07 /* SwiftyDropbox.framework */,
 				7242F392230752400083047B /* Eureka.framework */,
 				7242F391230752400083047B /* FontAwesome.framework */,
 				7242F390230752400083047B /* Realm.framework */,

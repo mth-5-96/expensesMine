@@ -2,3 +2,5 @@ $(SRCROOT)/Carthage/Build/iOS/Eureka.framework
 $(SRCROOT)/Carthage/Build/iOS/Realm.framework
 $(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework
 $(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework
+$(SRCROOT)/Carthage/Build/iOS/SwiftyDropbox.framework
+$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework

@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SwiftyDropbox
 
 class StartScreenViewController : UIViewController {
     
@@ -28,5 +29,13 @@ class StartScreenViewController : UIViewController {
         } catch {
             print(error)
         }
+    }
+    
+    @IBAction func connectDropbox(_ sender: Any) {
+        DropboxClientsManager.authorizeFromController(UIApplication.shared,
+                                                      controller: self,
+                                                      openURL: { (url: URL) -> Void in
+                                                          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                                                      })
     }
 }
