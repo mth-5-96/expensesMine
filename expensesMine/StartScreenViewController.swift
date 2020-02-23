@@ -30,12 +30,4 @@ class StartScreenViewController : UIViewController {
             print(error)
         }
     }
-    
-    @IBAction func connectDropbox(_ sender: Any) {
-        DropboxClientsManager.authorizeFromController(UIApplication.shared,
-                                                      controller: self,
-                                                      openURL: { (url: URL) -> Void in
-                                                          UIApplication.shared.open(url, options: [:], completionHandler: nil)
-                                                      })
-    }
 }

@@ -47,6 +47,59 @@
             </objects>
             <point key="canvasLocation" x="1681" y="359"/>
         </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="97N-oD-oXx">
+            <objects>
+                <viewController storyboardIdentifier="UploadVC" title="Upload View Controller" id="qdr-2y-dBP" customClass="UploadViewController" customModule="expensesMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EdA-C2-kd2"/>
+                        <viewControllerLayoutGuide type="bottom" id="aJn-eF-8oh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X9u-83-2UY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QgP-fq-bwh">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload to Dropbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwB-gg-uTZ">
+                                        <rect key="frame" x="62.5" y="0.0" width="218.5" height="263"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-lv-Tzm">
+                                        <rect key="frame" x="0.0" y="263" width="343" height="16"/>
+                                    </progressView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3S-pa-iT0">
+                                        <rect key="frame" x="137.5" y="279" width="68" height="388"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Do it!"/>
+                                        <connections>
+                                            <action selector="upload:" destination="qdr-2y-dBP" eventType="touchUpInside" id="fXg-TT-tGi"/>
+                                            <action selector="upload:" destination="sba-ie-O5w" eventType="touchUpInside" id="tF3-EN-LLm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aJn-eF-8oh" firstAttribute="top" secondItem="QgP-fq-bwh" secondAttribute="bottom" id="DRR-sb-KEX"/>
+                            <constraint firstItem="QgP-fq-bwh" firstAttribute="top" secondItem="EdA-C2-kd2" secondAttribute="bottom" id="Or7-Fc-SYm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QgP-fq-bwh" secondAttribute="trailing" id="Yfg-o6-EAW"/>
+                            <constraint firstItem="QgP-fq-bwh" firstAttribute="leading" secondItem="X9u-83-2UY" secondAttribute="leadingMargin" id="ZWH-44-k24"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="dRu-lv-Tzm" id="YaJ-TA-DSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5I-fM-FWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sba-ie-O5w" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="359"/>
+        </scene>
         <!--History View Controller-->
         <scene sceneID="9Zc-Y7-wZy">
             <objects>
@@ -132,13 +185,13 @@
                                 <rect key="frame" x="5" y="49" width="365" height="469"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,46 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ue-Ly-qtl">
-                                        <rect key="frame" x="106" y="0.0" width="153.5" height="61.5"/>
+                                        <rect key="frame" x="106" y="0.0" width="153.5" height="327"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="d6H-LS-6eb">
-                                        <rect key="frame" x="56" y="93.5" width="253" height="110"/>
+                                        <rect key="frame" x="56" y="359" width="253" height="110"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nxg-bd-EHx" customClass="FontAwesomeImageView" customModule="FontAwesome">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -177,13 +230,6 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upZ-IG-LSU">
-                                        <rect key="frame" x="122" y="235.5" width="121" height="233.5"/>
-                                        <state key="normal" title="Connect Dropbox"/>
-                                        <connections>
-                                            <action selector="connectDropbox:" destination="B3p-SK-oFq" eventType="touchUpInside" id="RAY-2Q-FnH"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>

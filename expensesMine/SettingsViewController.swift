@@ -19,7 +19,10 @@ class SettingsViewController: FormViewController {
                     row.title = "Startguthaben"
                     row.placeholder = "0.0"
                 }
+            +++ ButtonRow("upload") { row in
+                row.title = "Upload to Dropbox"
+                row.presentationMode = .show(controllerProvider: .storyBoard(storyboardId: "UploadVC", storyboardName: "Main", bundle: Bundle.main), onDismiss: nil)
+            }
     }
-
 }
 

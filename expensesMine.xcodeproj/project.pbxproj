@@ -24,6 +24,8 @@
 		72B292A61F6BBFAE00783908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A41F6BBFAE00783908 /* Main.storyboard */; };
 		72B292A81F6BBFAE00783908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A71F6BBFAE00783908 /* Assets.xcassets */; };
 		72B292AB1F6BBFAE00783908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B292A91F6BBFAE00783908 /* LaunchScreen.storyboard */; };
+		72C33B7A24029BC300DE7FDB /* DropboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33B7924029BC300DE7FDB /* DropboxManager.swift */; };
+		72C33B7C24029F8C00DE7FDB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33B7B24029F8C00DE7FDB /* UploadViewController.swift */; };
 		72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C39FB41F73DB8800B24CE0 /* Models.swift */; };
 		72F790FE1FA710C700455334 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F790FD1FA710C700455334 /* Styler.swift */; };
 		72F791011FA72FB800455334 /* Buenard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */; };
@@ -50,6 +52,8 @@
 		72B292A71F6BBFAE00783908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72B292AA1F6BBFAE00783908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72B292AC1F6BBFAE00783908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72C33B7924029BC300DE7FDB /* DropboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxManager.swift; sourceTree = "<group>"; };
+		72C33B7B24029F8C00DE7FDB /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		72C39FB41F73DB8800B24CE0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		72F790FD1FA710C700455334 /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buenard-Bold.ttf"; sourceTree = "<group>"; };
@@ -107,10 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				72B2929E1F6BBFAE00783908 /* AppDelegate.swift */,
+				72C33B7924029BC300DE7FDB /* DropboxManager.swift */,
 				72B292A01F6BBFAE00783908 /* EntryEditViewController.swift */,
 				72B292A21F6BBFAE00783908 /* SettingsViewController.swift */,
 				720507971F877E6D00035BCA /* HistoryViewController.swift */,
 				722CB5FD230C6AF1000744AF /* StartScreenViewController.swift */,
+				72C33B7B24029F8C00DE7FDB /* UploadViewController.swift */,
 				720507951F877A3A00035BCA /* HistoryEntryCell.swift */,
 				72C39FB41F73DB8800B24CE0 /* Models.swift */,
 				72F790FD1FA710C700455334 /* Styler.swift */,
@@ -234,12 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72F790FE1FA710C700455334 /* Styler.swift in Sources */,
+				72C33B7C24029F8C00DE7FDB /* UploadViewController.swift in Sources */,
 				72B292A31F6BBFAE00783908 /* SettingsViewController.swift in Sources */,
 				72B2929F1F6BBFAE00783908 /* AppDelegate.swift in Sources */,
 				7205079C1F87A9CE00035BCA /* Date+Month.swift in Sources */,
 				7205079A1F87866300035BCA /* Provisioning.swift in Sources */,
 				722CB5FE230C6AF1000744AF /* StartScreenViewController.swift in Sources */,
 				72B292A11F6BBFAE00783908 /* EntryEditViewController.swift in Sources */,
+				72C33B7A24029BC300DE7FDB /* DropboxManager.swift in Sources */,
 				720507981F877E6D00035BCA /* HistoryViewController.swift in Sources */,
 				72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */,
 				720507961F877A3A00035BCA /* HistoryEntryCell.swift in Sources */,
