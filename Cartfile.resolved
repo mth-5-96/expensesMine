@@ -1,5 +1,5 @@
 github "Alamofire/Alamofire" "4.9.1"
 github "dropbox/SwiftyDropbox" "5.1.0"
-github "realm/realm-cocoa" "v4.3.2"
-github "thii/FontAwesome.swift" "1.8.3"
-github "xmartlabs/Eureka" "5.2.0"
+github "realm/realm-cocoa" "v4.4.1"
+github "thii/FontAwesome.swift" "1.9.0"
+github "xmartlabs/Eureka" "5.2.1"
