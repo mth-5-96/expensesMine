@@ -9,17 +9,21 @@
 import RealmSwift
 import FontAwesome
 
-class Category : Object {
+class Category : Object, Codable {
     
     @objc dynamic var id = UUID().uuidString
     
     @objc dynamic var name = ""
     
-    @objc dynamic var lastAccessed = Date()
+    @objc dynamic var type = ""
+    
+    @objc dynamic var lastAccessed: Date?
     
     @objc dynamic var accountName = ""
     
-    @objc dynamic var icon = FontAwesome.questionCircle.rawValue
+    @objc dynamic var parentId: String?
+    
+    @objc dynamic var icon: String? = FontAwesome.questionCircle.rawValue
     
     override class func primaryKey() -> String {
         return "id"

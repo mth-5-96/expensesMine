@@ -27,6 +27,7 @@
 		72C33B7A24029BC300DE7FDB /* DropboxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33B7924029BC300DE7FDB /* DropboxManager.swift */; };
 		72C33B7C24029F8C00DE7FDB /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C33B7B24029F8C00DE7FDB /* UploadViewController.swift */; };
 		72C39FB51F73DB8800B24CE0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C39FB41F73DB8800B24CE0 /* Models.swift */; };
+		72CFCDD1249247800035CF01 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 72CFCDD0249247800035CF01 /* accounts.json */; };
 		72F790FE1FA710C700455334 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F790FD1FA710C700455334 /* Styler.swift */; };
 		72F791011FA72FB800455334 /* Buenard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */; };
 		72F791021FA72FB800455334 /* Buenard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F791001FA72FB800455334 /* Buenard-Regular.ttf */; };
@@ -55,6 +56,7 @@
 		72C33B7924029BC300DE7FDB /* DropboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxManager.swift; sourceTree = "<group>"; };
 		72C33B7B24029F8C00DE7FDB /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		72C39FB41F73DB8800B24CE0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		72CFCDD0249247800035CF01 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		72F790FD1FA710C700455334 /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buenard-Bold.ttf"; sourceTree = "<group>"; };
 		72F791001FA72FB800455334 /* Buenard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Buenard-Regular.ttf"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		72F791031FA72FC900455334 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				72CFCDD0249247800035CF01 /* accounts.json */,
 				72F790FF1FA72FB800455334 /* Buenard-Bold.ttf */,
 				72F791001FA72FB800455334 /* Buenard-Regular.ttf */,
 			);
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B292AB1F6BBFAE00783908 /* LaunchScreen.storyboard in Resources */,
+				72CFCDD1249247800035CF01 /* accounts.json in Resources */,
 				72F791021FA72FB800455334 /* Buenard-Regular.ttf in Resources */,
 				72B292A81F6BBFAE00783908 /* Assets.xcassets in Resources */,
 				72B292A61F6BBFAE00783908 /* Main.storyboard in Resources */,

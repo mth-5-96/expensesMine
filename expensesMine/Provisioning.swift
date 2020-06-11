@@ -9,36 +9,31 @@
 import Foundation
 import RealmSwift
 
-let categories = [
-    ["name": "Unterhaltung", "accountName": "Aufwendungen:Unterhaltung:Ausgehen"],
-    ["name": "Benzin", "accountName": "Aufwendungen:Fahrtkosten:Auto:Benzin"],
-    ["name": "Lebensmittel", "accountName": "Aufwendungen:Lebensmittel"],
-    ["name": "Auswärts essen beruflich", "accountName": "Aufwendungen:Lebensmittel:Auswärts essen beruflich"],
-    ["name": "Kleidung", "accountName": "Aufwendungen:Kleidung"],
-    ["name": "Lieferservice", "accountName": "Aufwendungen:Lebensmittel:Lieferservice"],
-    ["name": "Körperpflege", "accountName": "Aufwendungen:Körperpflege"],
-    ["name": "Geschenke", "accountName": "Aufwendungen:Geschenke:Esther"],
-    ["name": "Fahrkarten", "accountName": "Aufwendungen:Fahrtkosten:Fahrkarten"],
-    ["name": "Parkgebühren", "accountName": "Aufwendungen:Fahrtkosten:Auto:Parkgebühren"]
-]
 
 class Provisioning {
     
     class func prefillCategories() {
         
-        if let realm = try? Realm() {
-            if realm.objects(Category.self).count == 0 {
-                do {
-                    try realm.write {
-                        for category in categories {
-                            realm.create(Category.self, value: category, update: .all)
+        do {
+            if let jsonUrl = Bundle.main.url(forResource: "accounts", withExtension: "json") {
+                let data = try Data(contentsOf: jsonUrl)
+                let categories = try JSONDecoder().decode([Category].self, from: data)
+                let realm = try Realm()
+                if realm.objects(Category.self).count == 0 {
+                    do {
+                        try realm.write {
+                            for category in categories {
+                                realm.create(Category.self, value: category, update: .all)
+                            }
                         }
                     }
-                }
-                catch {
-                    print(error)
-                }
+                    catch {
+                        print(error)
+                    }
+                }                
             }
+        } catch {
+            print(error)
         }
     }
     

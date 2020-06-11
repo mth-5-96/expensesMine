@@ -1,0 +1,988 @@
+[
+  {
+    "id": "7ab395527b15258cdd7f69090bb98779",
+    "type": "ROOT",
+    "name": "Root Account",
+    "accountName": ""
+  },
+  {
+    "id": "debd120a369abe2bdfe72ef92a614dbc",
+    "type": "INCOME",
+    "name": "Erträge",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Erträge"
+  },
+  {
+    "id": "f071284d752137ba089d138665cbb77a",
+    "type": "INCOME",
+    "name": "Gehalt",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Gehalt"
+  },
+  {
+    "id": "b5c6857424a5cd5c79bc6749e7fc7c5d",
+    "type": "INCOME",
+    "name": "Kindergeld",
+    "parentId": "f071284d752137ba089d138665cbb77a",
+    "accountName": "Erträge:Gehalt:Kindergeld"
+  },
+  {
+    "id": "5bc029924c1dacb1cced66060317a500",
+    "type": "INCOME",
+    "name": "Gehalt",
+    "parentId": "f071284d752137ba089d138665cbb77a",
+    "accountName": "Erträge:Gehalt:Gehalt"
+  },
+  {
+    "id": "2f3c8a1438e93a7e2ac8d1e8e10a7185",
+    "type": "INCOME",
+    "name": "Zulagen",
+    "parentId": "f071284d752137ba089d138665cbb77a",
+    "accountName": "Erträge:Gehalt:Zulagen"
+  },
+  {
+    "id": "87944fdc7ab0511526f5173421ba4861",
+    "type": "INCOME",
+    "name": "Fahrtkostenerstattung",
+    "parentId": "f071284d752137ba089d138665cbb77a",
+    "accountName": "Erträge:Gehalt:Fahrtkostenerstattung"
+  },
+  {
+    "id": "1be5fca2c3a4435d069c2c5320628d13",
+    "type": "INCOME",
+    "name": "Kinderkrankengeld",
+    "parentId": "f071284d752137ba089d138665cbb77a",
+    "accountName": "Erträge:Gehalt:Kinderkrankengeld"
+  },
+  {
+    "id": "75dc395e47f0ea98e07cec5e14592311",
+    "type": "INCOME",
+    "name": "Geschenke",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Geschenke"
+  },
+  {
+    "id": "123d9201daf06712fd6a044d7a7fc690",
+    "type": "INCOME",
+    "name": "Kilian",
+    "parentId": "75dc395e47f0ea98e07cec5e14592311",
+    "accountName": "Erträge:Geschenke:Kilian"
+  },
+  {
+    "id": "2436fdbb0f9feb09c0c9da3d34d9839d",
+    "type": "INCOME",
+    "name": "Malin",
+    "parentId": "75dc395e47f0ea98e07cec5e14592311",
+    "accountName": "Erträge:Geschenke:Malin"
+  },
+  {
+    "id": "5f8f51ef69c23129d1a073b70ad553bf",
+    "type": "INCOME",
+    "name": "Sonstiges",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Sonstiges"
+  },
+  {
+    "id": "bb81080e7de048fc7931efb4712508aa",
+    "type": "INCOME",
+    "name": "Zinsen",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Zinsen"
+  },
+  {
+    "id": "c477a0b985fbea165e6d763c1e2bb9d2",
+    "type": "INCOME",
+    "name": "Girokonto",
+    "parentId": "bb81080e7de048fc7931efb4712508aa",
+    "accountName": "Erträge:Zinsen:Girokonto"
+  },
+  {
+    "id": "33883440b5d8a059aa9a38e6aa955770",
+    "type": "INCOME",
+    "name": "Sonstige",
+    "parentId": "bb81080e7de048fc7931efb4712508aa",
+    "accountName": "Erträge:Zinsen:Sonstige"
+  },
+  {
+    "id": "c802a59b3826221395bbac4ed36c3884",
+    "type": "INCOME",
+    "name": "Tagesgeldkonto",
+    "parentId": "bb81080e7de048fc7931efb4712508aa",
+    "accountName": "Erträge:Zinsen:Tagesgeldkonto"
+  },
+  {
+    "id": "e1d85ce2482173e1037ee2a6bfa3ce16",
+    "type": "INCOME",
+    "name": "Steuerrückvergütung",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Steuerrückvergütung"
+  },
+  {
+    "id": "3ecd77b9bef2064671e882686a9b7560",
+    "type": "INCOME",
+    "name": "Aktienverkauf",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Aktienverkauf"
+  },
+  {
+    "id": "e1f34ce34a0dfad8a942e3a1bf112e38",
+    "type": "INCOME",
+    "name": "Mama Kinder",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Mama Kinder"
+  },
+  {
+    "id": "300962f97cb099ad35216ba48c13e842",
+    "type": "INCOME",
+    "name": "Photovoltaik",
+    "parentId": "debd120a369abe2bdfe72ef92a614dbc",
+    "accountName": "Erträge:Photovoltaik"
+  },
+  {
+    "id": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "type": "EXPENSE",
+    "name": "Aufwendungen",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Aufwendungen"
+  },
+  {
+    "id": "a2d5d5f8b5d4ea28659a8cd64a1855cd",
+    "type": "EXPENSE",
+    "name": "Fahrtkosten",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Fahrtkosten"
+  },
+  {
+    "id": "20aaf85700d77847c53b9d662b8eb433",
+    "type": "EXPENSE",
+    "name": "Auto",
+    "parentId": "a2d5d5f8b5d4ea28659a8cd64a1855cd",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto"
+  },
+  {
+    "id": "195d2bb19ce1f600593a16d396b67160",
+    "type": "EXPENSE",
+    "name": "Abgaben",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Abgaben"
+  },
+  {
+    "id": "cf348b968fd8995c229ac45e210ba2f5",
+    "type": "EXPENSE",
+    "name": "Benzin",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Benzin"
+  },
+  {
+    "id": "4b06490ba103866e58611d5de26ad788",
+    "type": "EXPENSE",
+    "name": "Parkgebühren",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Parkgebühren"
+  },
+  {
+    "id": "18a11d95bb6dae2f432db1da989f58f3",
+    "type": "EXPENSE",
+    "name": "Reparaturen",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Reparaturen"
+  },
+  {
+    "id": "bb89e968cd8978977441f99cc8bb17fd",
+    "type": "EXPENSE",
+    "name": "Versicherungen",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Versicherungen"
+  },
+  {
+    "id": "f06ce9e703e0349026923251f4d35857",
+    "type": "EXPENSE",
+    "name": "Haftpflicht",
+    "parentId": "bb89e968cd8978977441f99cc8bb17fd",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Versicherungen:Haftpflicht"
+  },
+  {
+    "id": "3f1408273515e326a1c89eb5346d24dd",
+    "type": "EXPENSE",
+    "name": "Pflege",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Pflege"
+  },
+  {
+    "id": "9f0400ac71970badb9fb8d2f617aae30",
+    "type": "EXPENSE",
+    "name": "Wartung",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Wartung"
+  },
+  {
+    "id": "045ffb10982968bececd2c05173aaa07",
+    "type": "EXPENSE",
+    "name": "Gegenstände",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Gegenstände"
+  },
+  {
+    "id": "85d69c03bed07728c9933eb221af1cb9",
+    "type": "EXPENSE",
+    "name": "Strafzettel",
+    "parentId": "20aaf85700d77847c53b9d662b8eb433",
+    "accountName": "Aufwendungen:Fahrtkosten:Auto:Strafzettel"
+  },
+  {
+    "id": "475a6504fe89aaac85b2d21c814fb316",
+    "type": "EXPENSE",
+    "name": "Fahrkarten",
+    "parentId": "a2d5d5f8b5d4ea28659a8cd64a1855cd",
+    "accountName": "Aufwendungen:Fahrtkosten:Fahrkarten"
+  },
+  {
+    "id": "a59974fa5df1e3e4478bae6e26bdac40",
+    "type": "EXPENSE",
+    "name": "Computer",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Computer"
+  },
+  {
+    "id": "2ddbdccacb6caf82c9412b5b161797ef",
+    "type": "EXPENSE",
+    "name": "Geschenke",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Geschenke"
+  },
+  {
+    "id": "2dcd767bd015af00ada2c6e415f50219",
+    "type": "EXPENSE",
+    "name": "Esther",
+    "parentId": "2ddbdccacb6caf82c9412b5b161797ef",
+    "accountName": "Aufwendungen:Geschenke:Esther"
+  },
+  {
+    "id": "2d617c9d11afea2c3759f0c96f316de8",
+    "type": "EXPENSE",
+    "name": "Kinder",
+    "parentId": "2ddbdccacb6caf82c9412b5b161797ef",
+    "accountName": "Aufwendungen:Geschenke:Kinder"
+  },
+  {
+    "id": "c0975b8a59c31c23a85b18b14084a284",
+    "type": "EXPENSE",
+    "name": "Hobbies",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Hobbies"
+  },
+  {
+    "id": "5ae38a5054e667a2b4a3176138dfa5f0",
+    "type": "EXPENSE",
+    "name": "Musik",
+    "parentId": "c0975b8a59c31c23a85b18b14084a284",
+    "accountName": "Aufwendungen:Hobbies:Musik"
+  },
+  {
+    "id": "676aa8dac4477f48d5b84347f35b4f88",
+    "type": "EXPENSE",
+    "name": "Kleidung",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Kleidung"
+  },
+  {
+    "id": "126664586d4c1a818baed68c5da16fd0",
+    "type": "EXPENSE",
+    "name": "Kinder",
+    "parentId": "676aa8dac4477f48d5b84347f35b4f88",
+    "accountName": "Aufwendungen:Kleidung:Kinder"
+  },
+  {
+    "id": "990a306ed3b070b153440e9de920733d",
+    "type": "EXPENSE",
+    "name": "Lebensmittel",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Lebensmittel"
+  },
+  {
+    "id": "24e0cb89d4ba7ca9fad1d360e288a911",
+    "type": "EXPENSE",
+    "name": "Auswärts Essen Beruflich",
+    "parentId": "990a306ed3b070b153440e9de920733d",
+    "accountName": "Aufwendungen:Lebensmittel:Auswärts Essen Beruflich"
+  },
+  {
+    "id": "c4df725ff4676c134c697176b4777b4a",
+    "type": "EXPENSE",
+    "name": "Lieferservice",
+    "parentId": "990a306ed3b070b153440e9de920733d",
+    "accountName": "Aufwendungen:Lebensmittel:Lieferservice"
+  },
+  {
+    "id": "a04195f0f98a3d49b6ae0a394225c748",
+    "type": "EXPENSE",
+    "name": "Medikamente",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Medikamente"
+  },
+  {
+    "id": "528ab79199f378c1fdafe5146bb8ffa4",
+    "type": "EXPENSE",
+    "name": "Sonstiges",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Sonstiges"
+  },
+  {
+    "id": "8c2bac6b51ad7d5caa617c0aba95b6d3",
+    "type": "EXPENSE",
+    "name": "Bankgebühren",
+    "parentId": "528ab79199f378c1fdafe5146bb8ffa4",
+    "accountName": "Aufwendungen:Sonstiges:Bankgebühren"
+  },
+  {
+    "id": "add561296233d8350a9c694d6236a021",
+    "type": "EXPENSE",
+    "name": "Sonstiges",
+    "parentId": "528ab79199f378c1fdafe5146bb8ffa4",
+    "accountName": "Aufwendungen:Sonstiges:Sonstiges"
+  },
+  {
+    "id": "368ae5602d747ad4201ed0d25a7d8257",
+    "type": "EXPENSE",
+    "name": "Spenden",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Spenden"
+  },
+  {
+    "id": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "type": "EXPENSE",
+    "name": "Steuern",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Steuern"
+  },
+  {
+    "id": "ee96e9479ff20e4d45dd43588bb8be6d",
+    "type": "EXPENSE",
+    "name": "Einkommenssteuer",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Einkommenssteuer"
+  },
+  {
+    "id": "370b5182db0beb7a0b5c4cedc8879015",
+    "type": "EXPENSE",
+    "name": "Pflegeversicherung",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Pflegeversicherung"
+  },
+  {
+    "id": "17b6614933a87398a0518232e1e6f002",
+    "type": "EXPENSE",
+    "name": "Rentenversicherung",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Rentenversicherung"
+  },
+  {
+    "id": "4dbc9c5bcf648d3ca2749ad85d709fcf",
+    "type": "EXPENSE",
+    "name": "Solidarzuschlag",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Solidarzuschlag"
+  },
+  {
+    "id": "0fdfcf6f157f8913017395083ceb00a7",
+    "type": "EXPENSE",
+    "name": "Sonstige",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Sonstige"
+  },
+  {
+    "id": "1edbdc226bfa07651c061f4bca7fb3b9",
+    "type": "EXPENSE",
+    "name": "Sozialabgaben",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Sozialabgaben"
+  },
+  {
+    "id": "c0240bcd3ea5e9d9b078bf57d711ad40",
+    "type": "EXPENSE",
+    "name": "Grundsteuer",
+    "parentId": "1f03b3c4f7096ad6d479be35dbdf4f6f",
+    "accountName": "Aufwendungen:Steuern:Grundsteuer"
+  },
+  {
+    "id": "2f886898e1189b5577ba98a561ced566",
+    "type": "EXPENSE",
+    "name": "Telekommunikation",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Telekommunikation"
+  },
+  {
+    "id": "f812ce4e8e6d58c0723d1f266c3c60f5",
+    "type": "EXPENSE",
+    "name": "Online-Dienste",
+    "parentId": "2f886898e1189b5577ba98a561ced566",
+    "accountName": "Aufwendungen:Telekommunikation:Online-Dienste"
+  },
+  {
+    "id": "5b1b013aa481c432c89c2ef10aca8889",
+    "type": "EXPENSE",
+    "name": "Handy",
+    "parentId": "2f886898e1189b5577ba98a561ced566",
+    "accountName": "Aufwendungen:Telekommunikation:Handy"
+  },
+  {
+    "id": "55be0369b3d9585a735bd1073301a724",
+    "type": "EXPENSE",
+    "name": "Unterhaltung",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Unterhaltung"
+  },
+  {
+    "id": "a80225ad602bd2ae6a27782e01a4f5b7",
+    "type": "EXPENSE",
+    "name": "Ausgehen",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Ausgehen"
+  },
+  {
+    "id": "fb7070033cf22c5afce82814d0cab8a4",
+    "type": "EXPENSE",
+    "name": "Eintrittskarten",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Eintrittskarten"
+  },
+  {
+    "id": "3a68285de3aff79361f084dff755e275",
+    "type": "EXPENSE",
+    "name": "Musik",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Musik"
+  },
+  {
+    "id": "552dc1fc0797e9edca31b810662209d5",
+    "type": "EXPENSE",
+    "name": "Sonstige",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Sonstige"
+  },
+  {
+    "id": "5d753192589b6d74c3832a3bd768f63a",
+    "type": "EXPENSE",
+    "name": "Bücher",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Bücher"
+  },
+  {
+    "id": "74412e0feb0ce248a5f2dee53f788596",
+    "type": "EXPENSE",
+    "name": "Filme",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Filme"
+  },
+  {
+    "id": "36b878d10be5918ee880b3ace71e938c",
+    "type": "EXPENSE",
+    "name": "Spiele",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Spiele"
+  },
+  {
+    "id": "85e9e000d0b0e9dc22a3fcaa27f72269",
+    "type": "EXPENSE",
+    "name": "Glücksspiel",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Glücksspiel"
+  },
+  {
+    "id": "d7d0c413cd674bd3ba4b75bd842ded3a",
+    "type": "EXPENSE",
+    "name": "Luxus",
+    "parentId": "55be0369b3d9585a735bd1073301a724",
+    "accountName": "Aufwendungen:Unterhaltung:Luxus"
+  },
+  {
+    "id": "a106cad4f24b86eeeef17ae46fe50af5",
+    "type": "EXPENSE",
+    "name": "Wohnen",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Wohnen"
+  },
+  {
+    "id": "95d78a627d8c500de91b911a4b8d1fb9",
+    "type": "EXPENSE",
+    "name": "Miete",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Miete"
+  },
+  {
+    "id": "c313db1148a8648cc67a086d024d34c9",
+    "type": "EXPENSE",
+    "name": "Nebenkosten",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Nebenkosten"
+  },
+  {
+    "id": "ec477dac56908a5cf64d52778886eaab",
+    "type": "EXPENSE",
+    "name": "Abfall",
+    "parentId": "c313db1148a8648cc67a086d024d34c9",
+    "accountName": "Aufwendungen:Wohnen:Nebenkosten:Abfall"
+  },
+  {
+    "id": "4f81e4bafa8a146670937af834cff11d",
+    "type": "EXPENSE",
+    "name": "Gas Strom Wasser",
+    "parentId": "c313db1148a8648cc67a086d024d34c9",
+    "accountName": "Aufwendungen:Wohnen:Nebenkosten:Gas Strom Wasser"
+  },
+  {
+    "id": "9c2900b541482df7b001e3336e21d7bd",
+    "type": "EXPENSE",
+    "name": "Steuern",
+    "parentId": "c313db1148a8648cc67a086d024d34c9",
+    "accountName": "Aufwendungen:Wohnen:Nebenkosten:Steuern"
+  },
+  {
+    "id": "399ff6b56984b64b45ad9d6c92f0571c",
+    "type": "EXPENSE",
+    "name": "Sonstiges",
+    "parentId": "c313db1148a8648cc67a086d024d34c9",
+    "accountName": "Aufwendungen:Wohnen:Nebenkosten:Sonstiges"
+  },
+  {
+    "id": "a3e7ec6593945aa8e388312fc445fa00",
+    "type": "EXPENSE",
+    "name": "Einrichtung",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Einrichtung"
+  },
+  {
+    "id": "6edd41467fff001d3c652e443b3a5124",
+    "type": "EXPENSE",
+    "name": "Verbrauchsmittel",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Verbrauchsmittel"
+  },
+  {
+    "id": "3636ff8bf996c8c1aebdf480c0c3f892",
+    "type": "EXPENSE",
+    "name": "Elektrogeräte",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Elektrogeräte"
+  },
+  {
+    "id": "b8963b2833ccd71b770dfdda50555d8b",
+    "type": "EXPENSE",
+    "name": "Gegenstände",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Gegenstände"
+  },
+  {
+    "id": "24839de71bbf69507e39513ae7a04976",
+    "type": "EXPENSE",
+    "name": "Versicherungen",
+    "parentId": "a106cad4f24b86eeeef17ae46fe50af5",
+    "accountName": "Aufwendungen:Wohnen:Versicherungen"
+  },
+  {
+    "id": "8a162b060de985caeb00908278f62cca",
+    "type": "EXPENSE",
+    "name": "Versicherungen",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Versicherungen"
+  },
+  {
+    "id": "abb0ee85dee5331f92dbeaf1495772bd",
+    "type": "EXPENSE",
+    "name": "Haftpflicht",
+    "parentId": "8a162b060de985caeb00908278f62cca",
+    "accountName": "Aufwendungen:Versicherungen:Haftpflicht"
+  },
+  {
+    "id": "7680bbe4bf7bed8461b6f409e8c6e436",
+    "type": "EXPENSE",
+    "name": "Haus",
+    "parentId": "8a162b060de985caeb00908278f62cca",
+    "accountName": "Aufwendungen:Versicherungen:Haus"
+  },
+  {
+    "id": "01b064e34e8ef4516188ba097b2e2827",
+    "type": "EXPENSE",
+    "name": "Reiserücktritt",
+    "parentId": "8a162b060de985caeb00908278f62cca",
+    "accountName": "Aufwendungen:Versicherungen:Reiserücktritt"
+  },
+  {
+    "id": "131859bac7c348b1a97b1576ff5b49c1",
+    "type": "EXPENSE",
+    "name": "Haustiere",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Haustiere"
+  },
+  {
+    "id": "3cb571f54140901718c86a72a3edf38c",
+    "type": "EXPENSE",
+    "name": "Futter",
+    "parentId": "131859bac7c348b1a97b1576ff5b49c1",
+    "accountName": "Aufwendungen:Haustiere:Futter"
+  },
+  {
+    "id": "0854e8c1a2f8fcf517e3f20922c6c451",
+    "type": "EXPENSE",
+    "name": "Verbrauchsmittel",
+    "parentId": "131859bac7c348b1a97b1576ff5b49c1",
+    "accountName": "Aufwendungen:Haustiere:Verbrauchsmittel"
+  },
+  {
+    "id": "255c889ded93cb2a83934426dc060181",
+    "type": "EXPENSE",
+    "name": "Tierarztkosten",
+    "parentId": "131859bac7c348b1a97b1576ff5b49c1",
+    "accountName": "Aufwendungen:Haustiere:Tierarztkosten"
+  },
+  {
+    "id": "b0eb1fa3769c5ca818383f71da3d70a1",
+    "type": "EXPENSE",
+    "name": "Anschaffung",
+    "parentId": "131859bac7c348b1a97b1576ff5b49c1",
+    "accountName": "Aufwendungen:Haustiere:Anschaffung"
+  },
+  {
+    "id": "bd4dcc2e91a73b3009555ce68a9aa0dc",
+    "type": "EXPENSE",
+    "name": "Gegenstände",
+    "parentId": "131859bac7c348b1a97b1576ff5b49c1",
+    "accountName": "Aufwendungen:Haustiere:Gegenstände"
+  },
+  {
+    "id": "73f1beff40d7f4d1c135bc4cac056f1c",
+    "type": "EXPENSE",
+    "name": "Körperpflege",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Körperpflege"
+  },
+  {
+    "id": "7238128d1bb19e3b2b5c363d018f8b21",
+    "type": "EXPENSE",
+    "name": "Med. Behandlung",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Med. Behandlung"
+  },
+  {
+    "id": "d2efd8f0002f7b8abe916df773598126",
+    "type": "EXPENSE",
+    "name": "Kinder",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Kinder"
+  },
+  {
+    "id": "6a24012bb113589bc514784d69307600",
+    "type": "EXPENSE",
+    "name": "Gegenstände",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Gegenstände"
+  },
+  {
+    "id": "71decbef11c176e25dc7dba031a5121c",
+    "type": "EXPENSE",
+    "name": "Körperpflege",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Körperpflege"
+  },
+  {
+    "id": "46d354d29554caaaa16f1a733908aea2",
+    "type": "EXPENSE",
+    "name": "Aktivitäten",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Aktivitäten"
+  },
+  {
+    "id": "5baee9a7d214d20146913da1af019c48",
+    "type": "EXPENSE",
+    "name": "Medikamente",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Medikamente"
+  },
+  {
+    "id": "16bb060a2a06176580365fad8e60a413",
+    "type": "EXPENSE",
+    "name": "Feierlichkeiten",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Feierlichkeiten"
+  },
+  {
+    "id": "d80a9a14bbe9cc0456c2724508c2de7b",
+    "type": "EXPENSE",
+    "name": "Einrichtung",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Einrichtung"
+  },
+  {
+    "id": "6a558178491bbfcc99d11fd8900b14a5",
+    "type": "EXPENSE",
+    "name": "Kindergarten",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Kindergarten"
+  },
+  {
+    "id": "5c09c8c3923b03a513470fc7dc4245d8",
+    "type": "EXPENSE",
+    "name": "Taschengeld",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Taschengeld"
+  },
+  {
+    "id": "e7be5512339b92bc255435276e30b8f3",
+    "type": "EXPENSE",
+    "name": "Mitgliedsbeiträge",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Mitgliedsbeiträge"
+  },
+  {
+    "id": "3a90b6622e77df22e09cfb44a5079b98",
+    "type": "EXPENSE",
+    "name": "Schulausgaben",
+    "parentId": "d2efd8f0002f7b8abe916df773598126",
+    "accountName": "Aufwendungen:Kinder:Schulausgaben"
+  },
+  {
+    "id": "158074cc546fc33b73bf60fd20603f31",
+    "type": "EXPENSE",
+    "name": "Urlaub",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Urlaub"
+  },
+  {
+    "id": "aa121fb8f5e65595d425918aa7b33f24",
+    "type": "EXPENSE",
+    "name": "Schottland Juli",
+    "parentId": "158074cc546fc33b73bf60fd20603f31",
+    "accountName": "Aufwendungen:Urlaub:Schottland Juli"
+  },
+  {
+    "id": "decb2776707cc82dad8571bc874b7497",
+    "type": "EXPENSE",
+    "name": "Disneyland Okt",
+    "parentId": "158074cc546fc33b73bf60fd20603f31",
+    "accountName": "Aufwendungen:Urlaub:Disneyland Okt"
+  },
+  {
+    "id": "cbab616a7d86459aaaf936ee2bd21a46",
+    "type": "EXPENSE",
+    "name": "Europa Park Dez 2019",
+    "parentId": "158074cc546fc33b73bf60fd20603f31",
+    "accountName": "Aufwendungen:Urlaub:Europa Park Dez 2019"
+  },
+  {
+    "id": "a369713616ed5f22223f944c19164eb1",
+    "type": "EXPENSE",
+    "name": "Werbungskosten",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Werbungskosten"
+  },
+  {
+    "id": "ec47ee6f47cc39b1e53803c97b957b36",
+    "type": "EXPENSE",
+    "name": "Esther Haushalt",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Esther Haushalt"
+  },
+  {
+    "id": "10f56cfd6e5ec2f4e4b05190f8834b75",
+    "type": "EXPENSE",
+    "name": "Aktienkauf",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Aktienkauf"
+  },
+  {
+    "id": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "type": "EXPENSE",
+    "name": "Haus",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Haus"
+  },
+  {
+    "id": "ed312549aa8dd3b21f1a25dbf43f5818",
+    "type": "EXPENSE",
+    "name": "Renovierung",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Renovierung"
+  },
+  {
+    "id": "9ebdbb93ef53a17f5fdd46eb469dfae1",
+    "type": "EXPENSE",
+    "name": "Einrichtung",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Einrichtung"
+  },
+  {
+    "id": "2c016b83f20119fcf0ce790a0fb099f8",
+    "type": "EXPENSE",
+    "name": "Nebenkosten",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Nebenkosten"
+  },
+  {
+    "id": "c2ea0370ffccb5faeed84f752a3221e9",
+    "type": "EXPENSE",
+    "name": "Raten",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Raten"
+  },
+  {
+    "id": "e62479b0c355456348253b634b70238c",
+    "type": "EXPENSE",
+    "name": "Reparaturen",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Reparaturen"
+  },
+  {
+    "id": "3b0c56e0abbd3dddfa11d2e4b5db4195",
+    "type": "EXPENSE",
+    "name": "Wartung",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Wartung"
+  },
+  {
+    "id": "15246269592b56bddfc54cea67e33192",
+    "type": "EXPENSE",
+    "name": "Garten",
+    "parentId": "8bf95fe08f0d0de184ac5b1cd8fc27ab",
+    "accountName": "Aufwendungen:Haus:Garten"
+  },
+  {
+    "id": "c756c2aea21ddc16b9035be171cb3b6b",
+    "type": "EXPENSE",
+    "name": "Garten",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Garten"
+  },
+  {
+    "id": "00e572376a5027165c4fcef518c236f4",
+    "type": "EXPENSE",
+    "name": "Pflanzen",
+    "parentId": "c756c2aea21ddc16b9035be171cb3b6b",
+    "accountName": "Aufwendungen:Garten:Pflanzen"
+  },
+  {
+    "id": "93e12029f97378a5b24dc04c760fbebf",
+    "type": "EXPENSE",
+    "name": "Renovierung",
+    "parentId": "c756c2aea21ddc16b9035be171cb3b6b",
+    "accountName": "Aufwendungen:Garten:Renovierung"
+  },
+  {
+    "id": "b715e1009e41792b844d7f937f38efa9",
+    "type": "EXPENSE",
+    "name": "Möbel",
+    "parentId": "c756c2aea21ddc16b9035be171cb3b6b",
+    "accountName": "Aufwendungen:Garten:Möbel"
+  },
+  {
+    "id": "2e4ee704e544cf2780a03e025b89b5eb",
+    "type": "EXPENSE",
+    "name": "Verbrauchsmittel",
+    "parentId": "c756c2aea21ddc16b9035be171cb3b6b",
+    "accountName": "Aufwendungen:Garten:Verbrauchsmittel"
+  },
+  {
+    "id": "2bcc9e923a8be2f1b5fc2f0fcc1cedc0",
+    "type": "EXPENSE",
+    "name": "Gerätschaften",
+    "parentId": "c756c2aea21ddc16b9035be171cb3b6b",
+    "accountName": "Aufwendungen:Garten:Gerätschaften"
+  },
+  {
+    "id": "a8821ddf5918a9ded107e38d214c9d7b",
+    "type": "EXPENSE",
+    "name": "Autokauf",
+    "parentId": "3b4992b65dcab9d1dddf5217fa1e6b54",
+    "accountName": "Aufwendungen:Autokauf"
+  },
+  {
+    "id": "4afea94790a031b27e622776caed5f40",
+    "type": "ASSET",
+    "name": "Aktiva",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Aktiva"
+  },
+  {
+    "id": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "type": "ASSET",
+    "name": "Barvermögen",
+    "parentId": "4afea94790a031b27e622776caed5f40",
+    "accountName": "Aktiva:Barvermögen"
+  },
+  {
+    "id": "48ddb251e892427d044e14ed4e1d2028",
+    "type": "BANK",
+    "name": "Girokonto",
+    "parentId": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "accountName": "Aktiva:Barvermögen:Girokonto"
+  },
+  {
+    "id": "c8cbafec6361ab4f8a84e5cceb7032dd",
+    "type": "BANK",
+    "name": "Verrechnungskonto",
+    "parentId": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "accountName": "Aktiva:Barvermögen:Verrechnungskonto"
+  },
+  {
+    "id": "9a81bb1c2e6449fecef08f362b8cb32a",
+    "type": "CASH",
+    "name": "Bargeld",
+    "parentId": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "accountName": "Aktiva:Barvermögen:Bargeld"
+  },
+  {
+    "id": "f96972ff87c1aa4f4727354ad90d1ca7",
+    "type": "BANK",
+    "name": "Tagesgeldkonto Plus",
+    "parentId": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "accountName": "Aktiva:Barvermögen:Tagesgeldkonto Plus"
+  },
+  {
+    "id": "e354000018ba4c672b8a8cae90c6889a",
+    "type": "ASSET",
+    "name": "Geldkarte",
+    "parentId": "9cf00458cc19bd6c23c7b463a70e6e4e",
+    "accountName": "Aktiva:Barvermögen:Geldkarte"
+  },
+  {
+    "id": "b29c1afc37b4df8b550c503355842fc2",
+    "type": "LIABILITY",
+    "name": "Passiva",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Passiva"
+  },
+  {
+    "id": "95d5831ed110736b6b73bbad62843a4e",
+    "type": "LIABILITY",
+    "name": "Barverbindlichkeiten",
+    "parentId": "b29c1afc37b4df8b550c503355842fc2",
+    "accountName": "Passiva:Barverbindlichkeiten"
+  },
+  {
+    "id": "c71aeb561216aa98e66b5e842775888b",
+    "type": "CREDIT",
+    "name": "Kreditkarte",
+    "parentId": "95d5831ed110736b6b73bbad62843a4e",
+    "accountName": "Passiva:Barverbindlichkeiten:Kreditkarte"
+  },
+  {
+    "id": "4c9ba22f552770f954a6634da660a677",
+    "type": "EQUITY",
+    "name": "Anfangsbestand",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Anfangsbestand"
+  },
+  {
+    "id": "d681162825d669575d7fc65548b1f987",
+    "type": "BANK",
+    "name": "Ausgleichskonto-EUR",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Ausgleichskonto-EUR"
+  },
+  {
+    "id": "fb3add7386a72dfca8f1ad50205ff4ad",
+    "type": "BANK",
+    "name": "Ausbuchungskonto-EUR",
+    "parentId": "7ab395527b15258cdd7f69090bb98779",
+    "accountName": "Ausbuchungskonto-EUR"
+  }
+]
